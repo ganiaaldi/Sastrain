@@ -17,3 +17,7 @@ const nav = document.querySelector('nav ul');
       boxes[i].style.height = '10px';
       boxes[i].style.display = 'inline-block';
     }
+
+    function sendMessage() {
+      alert("Terimakasih, pesan anda telah terkirim.");
+    }

@@ -68,7 +68,7 @@ body {
 
 #content {
     width: 100%;
-    padding:120px 0px;
+    padding:120px 0px 0px 0px;
 }
 
 article{
@@ -96,7 +96,6 @@ h2{
 .home p{
     color: #93b6eb;
     font-size: 20px;
-    margin-top: 25px;
     margin: 25px 0px;
 }
 
@@ -126,6 +125,12 @@ h2{
     text-align: center;
 }
 
+.classroom h4{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #93b6eb;
+}
+
 .classroom-content{
     display: flex;
     flex-direction: row;
@@ -153,10 +158,56 @@ h2{
     height: 150px;
   }
 
-main {
-    width: 100%;
-    height: 2000px;
+.contact{
+    padding: 15px 20px;
+    background-color: #aecdfb;
 }
+
+.contact h2{
+    color: white;
+}
+
+.contact img{
+    border-radius: 50px;
+}
+
+.contact div{
+    background-color: #eaf3fa;
+    padding: 50px 50px;
+    margin: 100px 20px 20px 20px;
+    width: 70%;
+    border-radius: 50px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+
+form input,
+form textarea {
+    padding: 5px 10px;
+    border: none;
+    margin: 10px 0px;
+    border: 2px solid #e2edff;
+    font-family: 'quicksand', sans-serif;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+}
+.contact h3{
+    color:white
+}
+
+.contact section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
 
 
 footer {
