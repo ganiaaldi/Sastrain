@@ -44,7 +44,6 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    font-family: 'Open Sans';
     font-weight: 600;
     font-size: 20px;
     padding: 0px 30px;
@@ -69,12 +68,17 @@ body {
 
 #content {
     width: 100%;
-    padding:120px 0px 120px 0px;
+    padding:120px 0px;
+}
+
+article{
+    padding:25px 0px;
 }
 
 
 .home {
     display: flex;
+    flex-direction: row;
 }
 
 .home img {
@@ -82,7 +86,7 @@ body {
     width: 40%;
 }
 
-.home h1{
+h2{
     color: #699eee;
     font-size: 48px;
     font-weight: bold;
@@ -95,6 +99,59 @@ body {
     margin-top: 25px;
     margin: 25px 0px;
 }
+
+.about{
+    padding: 50px 20px;
+    background-color: #aecdfb;
+}
+
+.about h2{
+    text-align: center;
+    color: white;
+}
+
+.about p{
+    column-count: 2;
+    column-gap: 40px;
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+}
+
+.classroom{
+    padding: 50px 20px;
+}
+
+.classroom h2{
+    text-align: center;
+}
+
+.classroom-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    margin: 0px 20px;
+    background-color: #eaf3fa;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px 0 #699eee;
+  }
+
+.container {
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+  }
 
 main {
     width: 100%;
@@ -136,6 +193,10 @@ footer p {
 @media screen and (max-width: 992px) {
     header {
         padding: 0px 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
     }
 
     .nav-menu {
