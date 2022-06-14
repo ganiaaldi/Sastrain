@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap');
+
+/**
+    pallete : #eaf3fa #aecdfb #699eee 
+**/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 10%;
+    background-color: #699eee;
+    line-height: 60px;
+    padding: 0px 50px;
+    position: fixed;
+}
+
+header h1 {
+    font-family: 'Lobster';
+    float: left;
+}
+
+header h1 a {
+    letter-spacing: 2px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav ul {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0px 30px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #aecdfb;
+    font-weight: 800;
+}
+
+.nav-menu {
+    display: none;
+}
+
+body {
+    font-family: 'Open Sans';
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 2000px;
+}
+
+
+footer {
+    color: white;
+    background-color: #699eee ;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+footer p {
+    border-top: 1px solid rgb(234, 234, 234);
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 0px 50px;
+    }
+
+    .nav-menu {
+        display: block;
+        float:left;
+        position: relative;
+        font-size: 35px;
+        color: white;
+    }
+
+    .nav-menu span {
+        cursor: pointer;
+    }
+
+    header h1 {
+        height: 100%;
+        padding-left: 5%;
+    }
+
+    header h1 a {
+        font-size: 30px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    header nav ul {
+        position: fixed;
+        width: 100%;
+        height: 50%;
+        background-color: #699eee;
+        top: 60px;
+        left: -100%;
+        text-align: left;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 50px 0px;
+        line-height: 20px;
+    }
+
+    header nav ul.expanded-menu {
+        left: 0px;
+        height: auto;
+    }
+}
