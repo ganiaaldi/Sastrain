@@ -4,6 +4,10 @@
     pallete : #eaf3fa #aecdfb #699eee #93b6eb
 **/
 
+html {
+    scroll-behavior: smooth;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0px;
